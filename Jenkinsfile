@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Checkout code'){
             step{
-                Checkout scm
+                checkout scm
             }
         }
         stage('Extarct data'){

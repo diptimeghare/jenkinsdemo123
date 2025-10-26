@@ -3,6 +3,9 @@ pipeline{
     environment{
         PYTHON='C:\\Users\\Win11\\AppData\\Local\\Programs\\Python\\Python313\\python.exe'
     }
+    triggers{
+        cron("*/2 * * * *")
+    }
     stages{
         stage('Checkout code'){
             steps{
